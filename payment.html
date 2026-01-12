@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payment - CourseCraft Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Complete Payment</h2>
+    <p id="payment-course" class="muted">Loading selected course...</p>
+
+    <div class="payment-grid">
+      <div class="qr-area">
+        <h4>Scan QR to Pay</h4>
+        <img src="images/qr-placeholder.png" alt="QR code" id="qr-img" style="max-width:220px;">
+        <p class="muted small">Scan with UPI/BHIM/pay app and pay the exact amount.</p>
+        <p class="muted small"><strong>Bank:</strong> State Bank of India • <strong>IFSC:</strong> SBIN0003357</p>
+      </div>
+
+      <div class="card-area">
+        <h4>Or pay using Card / Netbanking</h4>
+        <form id="paymentForm">
+          <input name="cardname" type="text" placeholder="Name on card" required>
+          <input name="cardnumber" type="text" maxlength="19" placeholder="Card Number (xxxx xxxx xxxx xxxx)" required>
+          <div style="display:flex;gap:10px;">
+            <input name="expiry" type="text" maxlength="5" placeholder="MM/YY" required>
+            <input name="cvv" type="text" maxlength="4" placeholder="CVV" required>
+          </div>
+          <button type="submit" class="btn submit-btn" id="payBtn">Pay</button>
+        </form>
+      </div>
+    </div>
+
+    <p class="payment-message" style="margin-top:12px;"></p>
+  </div>
+
+  <!-- Modal -->
+  <div id="paymentModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalBody"></div>
+      <div style="margin-top:16px;">
+        <button id="modalOk" class="btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/payment.js"></script>
+</body>
+</html>

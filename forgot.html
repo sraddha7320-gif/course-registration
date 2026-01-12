@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reset Password - CourseCraft Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-row">
+      <div class="brand-wrap">
+        <img src="logo.png" alt="logo" class="logo">
+        <h1 class="brand">CourseCraft Academy</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="login-container">
+    <h2>Reset Your Password</h2>
+    <form id="resetForm">
+      <input type="email" id="resetEmail" placeholder="Enter your registered email" required>
+      <input type="password" id="newPassword" placeholder="Enter new password" required>
+      <button type="submit" class="btn">Reset Password</button>
+    </form>
+    <p id="reset-msg"></p>
+  </div>
+
+  <footer>© 2025 CourseCraft Academy. All Rights Reserved.</footer>
+
+  <script>
+    document.getElementById("resetForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById("resetEmail").value.trim();
+      const newPassword = document.getElementById("newPassword").value.trim();
+
+      let users = JSON.parse(localStorage.getItem("users")) || [];
+      const userIndex = users.findIndex(u => u.email === email);
+
+      if (userIndex !== -1) {
+        users[userIndex].password = newPassword;
+        localStorage.setItem("users", JSON.stringify(users));
+        document.getElementById("reset-msg").innerHTML = "✅ Password reset successful! <a href='login.html'>Login now</a>";
+      } else {
+        document.getElementById("reset-msg").innerText = "⚠️ Email not found!";
+        document.getElementById("reset-msg").style.color = "red";
+      }
+    });
+  </script>
+</body>
+</html>

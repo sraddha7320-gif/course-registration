@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses - CourseCraft Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-row">
+      <div class="brand-wrap">
+        <img src="images/logo.png" alt="CourseCraft Logo" class="logo">
+        <div>
+          <div class="brand-large">CourseCraft</div>
+          <div class="brand-small">Academy</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="courses.html" class="nav-link active">Courses</a>
+        <a href="register.html" class="nav-link">Register</a>
+        <a href="login.html" class="nav-link">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses container">
+      <h2>Our Professional Courses</h2>
+      <p class="subtitle">Choose a track and check agenda, duration, eligibility and fees. Click Register to proceed.</p>
+
+      <div class="courses-grid">
+        <!-- 1 Web Development -->
+        <article class="course-card" data-course="Web Development" data-fee="12000">
+          <img src="images/web-dev.png" alt="Web Development" class="course-thumb">
+          <h3>Web Development</h3>
+          <p class="muted">Build responsive websites using HTML, CSS, JavaScript & React.</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>HTML & CSS fundamentals</li>
+              <li>Modern JavaScript & ES6</li>
+              <li>React fundamentals & hooks</li>
+              <li>Final project: Portfolio site</li>
+            </ul>
+            <p><strong>Duration:</strong> 3 months</p>
+            <p><strong>Eligibility:</strong> Basic computer literacy</p>
+            <p><strong>Fees:</strong> ₹12,000</p>
+          </div>
+        </article>
+
+        <!-- 2 Data Science -->
+        <article class="course-card" data-course="Data Science" data-fee="15000">
+          <img src="images/data-science.png" alt="Data Science" class="course-thumb">
+          <h3>Data Science</h3>
+          <p class="muted">Python, data analysis, ML basics and visualization.</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>Python for data</li>
+              <li>Pandas & NumPy</li>
+              <li>Machine Learning basics</li>
+              <li>Project: Predictive model</li>
+            </ul>
+            <p><strong>Duration:</strong> 4 months</p>
+            <p><strong>Eligibility:</strong> Basic programming familiarity</p>
+            <p><strong>Fees:</strong> ₹15,000</p>
+          </div>
+        </article>
+
+        <!-- 3 Digital Marketing -->
+        <article class="course-card" data-course="Digital Marketing" data-fee="10000">
+          <img src="images/digital-marketing.png" alt="Digital Marketing" class="course-thumb">
+          <h3>Digital Marketing</h3>
+          <p class="muted">SEO, social media, ads, analytics and campaign building.</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>SEO & SEM fundamentals</li>
+              <li>Campaign planning & analytics</li>
+              <li>Social media strategies</li>
+              <li>Capstone: Launch a campaign</li>
+            </ul>
+            <p><strong>Duration:</strong> 2 months</p>
+            <p><strong>Eligibility:</strong> Basic internet skills</p>
+            <p><strong>Fees:</strong> ₹10,000</p>
+          </div>
+        </article>
+
+        <!-- 4 UI/UX Design -->
+        <article class="course-card" data-course="UI/UX Design" data-fee="13000">
+          <img src="images/ui-ux.png" alt="UI/UX" class="course-thumb">
+          <h3>UI/UX Design</h3>
+          <p class="muted">User research, prototyping and design tools (Figma).</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>User research & personas</li>
+              <li>Wireframing & prototyping</li>
+              <li>Usability testing & accessibility</li>
+              <li>Final project: App prototype</li>
+            </ul>
+            <p><strong>Duration:</strong> 3 months</p>
+            <p><strong>Eligibility:</strong> Creative interest</p>
+            <p><strong>Fees:</strong> ₹13,000</p>
+          </div>
+        </article>
+
+        <!-- 5 Python Programming -->
+        <article class="course-card" data-course="Python Programming" data-fee="11000">
+          <img src="images/python.png" alt="Python" class="course-thumb">
+          <h3>Python Programming</h3>
+          <p class="muted">Core Python, automation and small application projects.</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>Python syntax & data structures</li>
+              <li>Functions & OOP</li>
+              <li>Automation scripts</li>
+              <li>Final mini-app</li>
+            </ul>
+            <p><strong>Duration:</strong> 2.5 months</p>
+            <p><strong>Eligibility:</strong> Beginners welcome</p>
+            <p><strong>Fees:</strong> ₹11,000</p>
+          </div>
+        </article>
+
+        <!-- 6 Java Programming -->
+        <article class="course-card" data-course="Java Programming" data-fee="12500">
+          <img src="images/java.png" alt="Java" class="course-thumb">
+          <h3>Java Programming</h3>
+          <p class="muted">Core Java, OOP and real-world projects.</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>Java fundamentals</li>
+              <li>OOP & data structures</li>
+              <li>Console & GUI apps</li>
+              <li>Final project</li>
+            </ul>
+            <p><strong>Duration:</strong> 3 months</p>
+            <p><strong>Eligibility:</strong> Basic programming</p>
+            <p><strong>Fees:</strong> ₹12,500</p>
+          </div>
+        </article>
+
+        <!-- 7 Cloud Computing -->
+        <article class="course-card" data-course="Cloud Computing" data-fee="14000">
+          <img src="images/cloud.png" alt="Cloud" class="course-thumb">
+          <h3>Cloud Computing</h3>
+          <p class="muted">AWS/Azure basics, deployment and cloud architecture intro.</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>Cloud fundamentals</li>
+              <li>AWS & Azure basics</li>
+              <li>Deploying sample apps</li>
+              <li>Mini cloud project</li>
+            </ul>
+            <p><strong>Duration:</strong> 2 months</p>
+            <p><strong>Eligibility:</strong> Basic IT knowledge</p>
+            <p><strong>Fees:</strong> ₹14,000</p>
+          </div>
+        </article>
+
+        <!-- 8 Artificial Intelligence -->
+        <article class="course-card" data-course="Artificial Intelligence" data-fee="18000">
+          <img src="images/ai.png" alt="AI" class="course-thumb">
+          <h3>Artificial Intelligence</h3>
+          <p class="muted">Neural networks, deep learning & ML projects.</p>
+          <div class="card-actions">
+            <button class="details-btn">View Details</button>
+            <button class="btn outline register-redirect">Register Now</button>
+          </div>
+          <div class="course-details">
+            <h4>Agenda</h4>
+            <ul>
+              <li>AI fundamentals</li>
+              <li>Neural networks & deep learning</li>
+              <li>ML workflows</li>
+              <li>Capstone project</li>
+            </ul>
+            <p><strong>Duration:</strong> 4 months</p>
+            <p><strong>Eligibility:</strong> Programming & math basics</p>
+            <p><strong>Fees:</strong> ₹18,000</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2025 CourseCraft Academy</div>
+      <div class="footer-links"><a href="login.html">Login</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
